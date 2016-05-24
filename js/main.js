@@ -5,4 +5,6 @@ $(document).ready(function() {
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 700);
     });
+
+    $( '.swipebox' ).swipebox();
 });
