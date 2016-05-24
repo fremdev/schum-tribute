@@ -4,18 +4,37 @@
     <meta charset="utf-8">
     <title>Michael Schumacher Tribute</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body>
+  <body id="home">
+    <nav class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home">Racing Legend</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#bio">Bio</a></li>
+          <li><a href="#records">Records</a></li>
+          <li><a href="#links">Links</a></li>
+        </ul>
+      </div>
+     </div>
+    </nav>
     <div class="container">
     <header class="main-photo">
-
         <h1 class="main-header">Racing Legend</h1>
-
     </header>
     </div>
     <div class="container">
-    <section>
+    <section id="bio">
       <h2>Biography</h2>
       <p>
         Michael Schumacher born 3 January 1969 is a retired German racing driver. He is a seven-time Formula One World Champion and is widely regarded as one of the greatest Formula One drivers of all time. He was named Laureus World Sportsman of the Year twice. He won two titles with Benetton in 1994 and 1995 before moving to Ferrari where he drove for eleven years. His time with Ferrari yielded five consecutive titles between 2000 and 2004.
@@ -33,7 +52,7 @@
         In December 2013, Schumacher suffered a serious head injury while skiing. He was airlifted to a hospital and placed in a medically induced coma, having suffered a traumatic brain injury. He was in the coma for six months from 29 December 2013 until 16 June 2014. He left the hospital in Grenoble for further rehabilitation at the University Hospital (CHUV) in Lausanne. On 9 September 2014, Schumacher was relocated to his home where he continues to receive medical treatment and rehabilitation privately.
       </p>
     </section>
-    <section>
+    <section id="records">
       <h2>Records</h2>
       <ul>
       <li class="record">Championship titles: <span class="record-info">7 (1994, 1995, 2000, 2001, 2002, 2003, 2004)</span></li>
@@ -69,10 +88,19 @@
       <li class="record">Races with one team: <span class="record-info">181 (Ferrari)</span></li>
     </ul>
     </section>
+    <section id="links">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="http://www.michael-schumacher.de/" target="_blank">Official website</a></li>
+      </ul>
+    </section>
     </div>
     <footer>
-      <div class="container">Designed and built by <a href="https://twitter.com/fremdev">@fremdev</a> - 2016</div>
+      <div class="container">
+        <div>Designed and built by <a href="https://twitter.com/fremdev">@fremdev</a> - 2016</div>
+      </div>  
     </footer>
-
+  <script src="js/jquery.min.js" charset="utf-8"></script>
+  <script src="js/bootstrap.min.js" charset="utf-8"></script>
   </body>
 </html>

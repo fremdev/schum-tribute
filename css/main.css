@@ -27,8 +27,15 @@ footer {
 .record {
   font-family: Tahoma, Verdana, sans-serif;
 }
+
 .record-info {
   color: #dd8811;
   font-weight: bold;
+}
 
+.navbar {
+  min-width: 300px;
+}
+.container {
+  min-width: 300px;
 }
