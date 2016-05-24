@@ -36,6 +36,15 @@ footer {
 .navbar {
   min-width: 300px;
 }
+
 .container {
   min-width: 300px;
+}
+
+.contacts {
+    margin-top: 10px;
+}
+
+.contact-icon {
+  margin-right: 10px;
 }
