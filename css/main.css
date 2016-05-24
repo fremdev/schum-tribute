@@ -10,8 +10,9 @@ General
 Navigation
 *****************/
 
-.navbar {
+.navbar-inverse {
   min-width: 300px;
+  background-color: #2a2730;
 }
 
 .navbar-inverse .navbar-brand {
@@ -94,9 +95,9 @@ Footer
 *****************/
 
 footer {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-top: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px;
   color: #99979c;
   text-align: center;
   background-color: #2a2730;
@@ -108,4 +109,8 @@ footer {
 
 .contact-icon {
   margin-right: 10px;
+}
+
+.references {
+  margin-bottom: 10px;
 }
