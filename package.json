@@ -1,0 +1,28 @@
+{
+  "name": "schum-tribute",
+  "version": "1.0.0",
+  "description": "Simple one page application about the greatest racing driver in the world Michael Schumacher",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fremdev/schum-tribute.git"
+  },
+  "keywords": [
+    "racing",
+    "formula-1",
+    "schumacher"
+  ],
+  "author": "Alex Efremov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fremdev/schum-tribute/issues"
+  },
+  "homepage": "https://github.com/fremdev/schum-tribute#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0"
+  }
+}
