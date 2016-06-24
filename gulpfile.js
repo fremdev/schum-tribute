@@ -27,11 +27,17 @@ gulp.task('clean', function() {
     del(['dist', 'js/app*.js']);
 });
 
+gulp.task('watch', function() {
+  gulp.watch('js/main.js', ['concatScripts']);
+});
+
 gulp.task("build", ["minifyScripts"], function() {
   return gulp.src(['css/**', 'js/app.min.js', 'index.html',
                   'img/**', 'fonts/**'], { base: './'})
               .pipe(gulp.dest('dist'));
 });
+
+gulp.task('serve', ['watch']);
 
 gulp.task("default", ["clean"], function() {
   gulp.start('build');
