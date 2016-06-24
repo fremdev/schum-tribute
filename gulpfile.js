@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
 
 gulp.task("concatScripts", function() {
-  gulp.src([
+  return gulp.src([
     'js/jquery.min.js',
     'js/jquery.swipebox.min.js',
     'js/bootstrap.min.js',
@@ -15,13 +15,13 @@ gulp.task("concatScripts", function() {
     .pipe(gulp.dest('js'));
 });
 
-gulp.task("minifyScripts", function() {
-  gulp.src('js/app.js')
+gulp.task("minifyScripts", ["concatScripts"], function() {
+  return gulp.src('js/app.js')
   .pipe(uglify())
   .pipe(rename('app.min.js'))
   .pipe(gulp.dest('js'));
 });
 
-gulp.task("default", ["concatScripts", "minifyScripts"], function() {
-  console.log('This is default task');
-});
+gulp.task("build", ["minifyScripts"]);
+
+gulp.task("default", ["build"]);
