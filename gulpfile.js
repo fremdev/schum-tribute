@@ -22,6 +22,10 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
   .pipe(gulp.dest('js'));
 });
 
-gulp.task("build", ["minifyScripts"]);
+gulp.task("build", ["minifyScripts"], function() {
+  return gulp.src(['css/**', 'js/app.min.js', 'index.html',
+                  'img/**', 'fonts/**'], { base: './'})
+              .pipe(gulp.dest('dist'));
+});
 
 gulp.task("default", ["build"]);
