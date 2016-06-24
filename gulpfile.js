@@ -3,7 +3,8 @@
 var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    rename = require('gulp-rename');
+    rename = require('gulp-rename'),
+    del = require('del');
 
 gulp.task("concatScripts", function() {
   return gulp.src([
@@ -22,10 +23,16 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
   .pipe(gulp.dest('js'));
 });
 
+gulp.task('clean', function() {
+    del(['dist', 'js/app*.js']);
+});
+
 gulp.task("build", ["minifyScripts"], function() {
   return gulp.src(['css/**', 'js/app.min.js', 'index.html',
                   'img/**', 'fonts/**'], { base: './'})
               .pipe(gulp.dest('dist'));
 });
 
-gulp.task("default", ["build"]);
+gulp.task("default", ["clean"], function() {
+  gulp.start('build');
+});

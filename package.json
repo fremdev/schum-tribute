@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/fremdev/schum-tribute#readme",
   "devDependencies": {
+    "del": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",
